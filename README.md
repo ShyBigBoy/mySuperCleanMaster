@@ -17,7 +17,7 @@
 ![](https://github.com/ShyBigBoy/mySuperCleanMaster/blob/master/screenshot/3.jpg) 
 
 ##Open source projects
-* [ButterKnife](https://github.com/M66B/XPrivacy)  
+* [XPrivacy](https://github.com/M66B/XPrivacy)  
 * [ButterKnife](http://jakewharton.github.io/butterknife/)  
 * [changelog](https://github.com/gabrielemariotti/changeloglib)  
 * [smoothprogressbar](https://github.com/castorflex/SmoothProgressBar)  
