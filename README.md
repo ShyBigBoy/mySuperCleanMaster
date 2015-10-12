@@ -14,9 +14,9 @@
 ![](https://github.com/ShyBigBoy/mySuperCleanMaster/blob/master/screenshot/home.jpg)  
 ![](https://github.com/ShyBigBoy/mySuperCleanMaster/blob/master/screenshot/1.jpg) 
 ![](https://github.com/ShyBigBoy/mySuperCleanMaster/blob/master/screenshot/2.jpg) 
-![](https://github.com/ShyBigBoy/mySuperCleanMaster/blob/master/screenshot/3.jpg) 
 
 ##Open source projects
+* [superCleanMaster](https://github.com/joyoyao/superCleanMaster)  
 * [XPrivacy](https://github.com/M66B/XPrivacy)  
 * [ButterKnife](http://jakewharton.github.io/butterknife/)  
 * [changelog](https://github.com/gabrielemariotti/changeloglib)  

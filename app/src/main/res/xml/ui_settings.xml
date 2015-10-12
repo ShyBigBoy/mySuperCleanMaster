@@ -31,7 +31,7 @@
         <Preference
             android:key="pGithub"
             android:title="Github"
-            android:summary="github.com/joyoyao/superCleanMaster"
+            android:summary="https://github.com/ShyBigBoy/mySuperCleanMaster"
             />
 
         <Preference
