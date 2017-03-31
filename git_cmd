@@ -69,6 +69,14 @@ git show commit ID（哈希值）
   
   git branch --set-upstream dev1 origin/dev1 #关联本地分支和远程分支
 
+  #Caching your GitHub password in Git
+  #If you're cloning GitHub repositories using HTTPS, you can use a credential helper 
+  #to tell Git to remember your GitHub username and password every time it talks to GitHub.
+  #Turn on the credential helper so that Git will save your password in memory for some time. 
+  #By default, Git will cache your password for 15 minutes.
+ $git config --global credential.helper cache # Set git to use the credential memory cache
+ $git config --global credential.helper 'cache --timeout=3600' #Set the cache to timeout after 1 hour (in seconds)
+
   $ git config --global -l
 user.name=zhicheng.huang
 user.email=zhicheng.huang@tcl.com
@@ -79,6 +87,7 @@ color.branch=true
 color.diff=true
 merge.tool=vimdiff
 mergetool.prompt=false
+credential.helper=cache --timeout=72000
 
   (7)修改代码实验测试，new一个新的测试分支
   $git branch test1
