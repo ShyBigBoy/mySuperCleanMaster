@@ -1,0 +1,37 @@
+To make the preview version available in your Start menu, right-click studio64.exe and click Pin to Start Menu.
+
+git branch --set-upstream dev1 origin/dev1
+
+$git config -l
+user.name=zhicheng.huang
+user.email=zhicheng.huang@tcl.com
+color.ui=auto
+color.status=true
+color.interactive=true
+color.branch=true
+color.diff=true
+merge.tool=vimdiff
+mergetool.prompt=false
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+remote.origin.url=https://github.com/ShyBigBoy/mySuperCleanMaster.git
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+user.name=ShyBigBoy
+user.email=1104449876@qq.com
+branch.dev1.remote=origin
+branch.dev1.merge=refs/heads/dev1
+
+$ git config --global -l
+user.name=zhicheng.huang
+user.email=zhicheng.huang@tcl.com
+color.ui=auto
+color.status=true
+color.interactive=true
+color.branch=true
+color.diff=true
+merge.tool=vimdiff
+mergetool.prompt=false
