@@ -90,7 +90,7 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
         } else if ("pVersionDetail".equals(preference.getKey())) {
             VersionFragment.launch(getActivity());
         } else if ("pGithub".equals(preference.getKey())) {
-            Utils.launchBrowser(getActivity(), "https://github.com/joyoyao/superCleanMaster");
+            Utils.launchBrowser(getActivity(), "https://github.com/ShyBigBoy/mySuperCleanMaster");
         }else if ("pGrade".equals(preference.getKey())) {
             startMarket();
         }else if ("pShare".equals(preference.getKey())) {

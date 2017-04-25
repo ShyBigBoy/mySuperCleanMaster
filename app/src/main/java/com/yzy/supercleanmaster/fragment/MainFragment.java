@@ -3,6 +3,7 @@ package com.yzy.supercleanmaster.fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +43,8 @@ public class MainFragment extends BaseFragment {
 
     private Timer timer;
     private Timer timer2;
+    //avoid creating multiple instances of specified activity due to user's misoperation
+    private boolean mSingleton;
 
 
     @Override
@@ -52,6 +55,7 @@ public class MainFragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
         ButterKnife.inject(this, view);
         mContext = getActivity();
+        Log.i("CleanMaster", "MainFragment.onCreateView");
 
         return view;
     }
@@ -61,6 +65,8 @@ public class MainFragment extends BaseFragment {
     public void onResume() {
         super.onResume();
         fillData();
+        mSingleton = false;
+        Log.i("CleanMaster", "MainFragment.onResume");
     }
 
     @Override
@@ -68,6 +74,7 @@ public class MainFragment extends BaseFragment {
         // TODO Auto-generated method stub
         super.onActivityCreated(savedInstanceState);
         UmengUpdateAgent.update(getActivity());
+        Log.i("CleanMaster", "MainFragment.onActivityCreated");
     }
 
     private void fillData() {
@@ -145,35 +152,53 @@ public class MainFragment extends BaseFragment {
 
     @OnClick(R.id.card1)
     void speedUp() {
-        startActivity(MemoryCleanActivity.class);
+        Log.i("CleanMaster", "MainFragment.speedUp111");
+        if (!mSingleton) {
+            startActivity(MemoryCleanActivity.class);
+            mSingleton = true;
+            Log.i("CleanMaster", "MainFragment.speedUp222");
+        }
     }
 
 
     @OnClick(R.id.card2)
     void rubbishClean() {
-        startActivity(RubbishCleanActivity.class);
+        if (!mSingleton) {
+            startActivity(RubbishCleanActivity.class);
+            mSingleton = true;
+        }
     }
 
 
     @OnClick(R.id.card3)
     void AutoStartManage() {
-        startActivity(AutoStartManageActivity.class);
+        Log.i("CleanMaster", "MainFragment.AutoStartManage111");
+        if (!mSingleton) {
+            startActivity(AutoStartManageActivity.class);
+            mSingleton = true;
+            Log.i("CleanMaster", "MainFragment.AutoStartManage222");
+        }
     }
 
     @OnClick(R.id.card4)
     void SoftwareManage() {
-        startActivity(SoftwareManageActivity.class);
+        if (!mSingleton) {
+            startActivity(SoftwareManageActivity.class);
+            mSingleton = true;
+        }
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
         ButterKnife.reset(this);
+        Log.i("CleanMaster", "MainFragment.onDestroyView");
     }
 
 
     @Override
     public void onDestroy() {
+        Log.i("CleanMaster", "MainFragment.onDestroy");
         timer.cancel();
         timer2.cancel();
         super.onDestroy();

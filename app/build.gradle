@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "22.0.1"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.yzy.supercleanmaster"
@@ -10,6 +10,11 @@ android {
         targetSdkVersion 21
         versionCode 3
         versionName "1.0"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
     }
     buildTypes {
         release {

@@ -213,6 +213,7 @@ public class SoftwareManageFragment extends BaseFragment {
                     systemAppInfos = new ArrayList<>();
                     long allSize = 0;
                     for (AppInfo a : result) {
+                        if ("com.yzy.supercleanmaster".equals(a.getPackname())) continue;
                         if (a.isUserApp()) {
                             allSize += a.getPkgSize();
                             userAppInfos.add(a);
