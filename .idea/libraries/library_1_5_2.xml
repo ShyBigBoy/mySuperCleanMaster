@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="library-1.5.2">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.changeloglib/library/1.5.2/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.gabrielemariotti.changeloglib/library/1.5.2/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/9f2b5a4d550392bb43f7861e575725ee732cd9f8/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/9f2b5a4d550392bb43f7861e575725ee732cd9f8/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

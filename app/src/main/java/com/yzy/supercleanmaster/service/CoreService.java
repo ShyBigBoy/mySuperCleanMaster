@@ -2,6 +2,8 @@ package com.yzy.supercleanmaster.service;
 
 import android.app.ActivityManager;
 import android.app.Service;
+import android.app.usage.UsageStats;
+import android.app.usage.UsageStatsManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
@@ -9,6 +11,7 @@ import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Binder;
+import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 import android.text.format.Formatter;
@@ -18,8 +21,12 @@ import android.widget.Toast;
 import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.bean.AppProcessInfo;
 
+import com.jaredrummler.android.processes.AndroidProcesses;
+import com.jaredrummler.android.processes.models.AndroidAppProcess;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class CoreService extends Service {
@@ -34,6 +41,7 @@ public class CoreService extends Service {
     private boolean mIsCleaning = false;
 
     ActivityManager activityManager = null;
+    UsageStatsManager mUsageStatsManager = null;
     List<AppProcessInfo> list = null;
     PackageManager packageManager = null;
     Context mContext;
@@ -75,6 +83,9 @@ public class CoreService extends Service {
                     getSystemService(Context.ACTIVITY_SERVICE);
             packageManager = getApplicationContext()
                     .getPackageManager();
+            if (mUsageStatsManager == null) {
+                mUsageStatsManager = (UsageStatsManager) getSystemService(Context.USAGE_STATS_SERVICE);
+            }
         } catch (Exception e) {
 
         }
@@ -154,8 +165,9 @@ public class CoreService extends Service {
             ApplicationInfo appInfo = null;
             AppProcessInfo abAppProcessInfo = null;
 
-            List<ActivityManager.RunningAppProcessInfo> appProcessList = activityManager
-                    .getRunningAppProcesses();
+            //List<ActivityManager.RunningAppProcessInfo> appProcessList = activityManager.getRunningAppProcesses();
+            List<ActivityManager.RunningAppProcessInfo> appProcessList = getRunningAppList();
+
             publishProgress(0, appProcessList.size());
 
             for (ActivityManager.RunningAppProcessInfo appProcessInfo : appProcessList) {
@@ -338,5 +350,44 @@ public class CoreService extends Service {
         return mIsCleaning;
     }
 
+    public List<ActivityManager.RunningAppProcessInfo> getRunningAppList() {
+        List<ActivityManager.RunningAppProcessInfo> appProcessList = null;
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP_MR1 || Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            //Android 5.0+ killed getRunningTasks(int) and getRunningAppProcesses(). Both of those methods are now
+            //deprecated and only return your application process
+            appProcessList = activityManager.getRunningAppProcesses();
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1 && Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+            //Google has significantly restricted access to /proc in Android Nougat. This library will not work on Android 7.0
+            appProcessList = new ArrayList<>();
+            List<AndroidAppProcess> runningAppProcesses = AndroidProcesses.getRunningAppProcesses();
+            for (AndroidAppProcess process : runningAppProcesses) {
+                ActivityManager.RunningAppProcessInfo info = new ActivityManager.RunningAppProcessInfo(process.name, process.pid, null);
+                info.uid = process.uid;
+                // TODO: Get more information about the process. pkgList, importance, lru, etc.
+                appProcessList.add(info);
+            }
+        }
+        return appProcessList;
+    }
+
+    /*public List<AppProcessInfo> getRunningAppList_N() {
+        int mAppCount = 0;
+        list = new ArrayList<AppProcessInfo>();
+        ApplicationInfo appInfo = null;
+        AppProcessInfo abAppProcessInfo = null;
+
+        Calendar calendar = Calendar.getInstance();
+        long endTime = calendar.getTimeInMillis();
+        calendar.add(Calendar.MONTH, -1);
+        long startTime = calendar.getTimeInMillis();
+        List<UsageStats> usageStatsList = mUsageStatsManager.queryUsageStats(UsageStatsManager.INTERVAL_DAILY, startTime, endTime);
+        List<String> pkgList_N = new ArrayList<>();
+        if ((null != usageStatsList) && !usageStatsList.isEmpty()) {
+            for (UsageStats usageStats : usageStatsList) {
+                pkgList_N.add(usageStats.getPackageName());
+            }
+        }
+
+    }*/
 
 }

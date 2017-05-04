@@ -189,7 +189,8 @@ public class MemoryCleanActivity extends BaseSwipeBackActivity implements OnDism
 
         Allmemory = 0;
         for (AppProcessInfo appInfo : apps) {
-            if (!appInfo.isSystem && !"com.yzy.supercleanmaster".equals(appInfo.processName)) {
+            //if (!appInfo.isSystem && !"com.yzy.supercleanmaster".equals(appInfo.processName)) {
+            if (!"com.yzy.supercleanmaster".equals(appInfo.processName)) {
                 mAppProcessInfos.add(appInfo);
                 Allmemory += appInfo.memory;
             }

@@ -33,6 +33,11 @@ public class AppProcessInfo implements Comparable<AppProcessInfo> {
     public String appName;
 
     /**
+     * The pkg name.
+     */
+    public String pkgName;
+
+    /**
      * The name of the process that this object is associated with.
      */
     public String processName;
@@ -99,6 +104,11 @@ public class AppProcessInfo implements Comparable<AppProcessInfo> {
         this.processName = processName;
         this.pid = pid;
         this.uid = uid;
+    }
+
+    public AppProcessInfo(String pkgName) {
+        super();
+        this.pkgName = pkgName;
     }
 
     /* (non-Javadoc)

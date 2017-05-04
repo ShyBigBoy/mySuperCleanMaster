@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="lib-manipulation-3.1.0">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.nhaarman.listviewanimations/lib-manipulation/3.1.0/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.nhaarman.listviewanimations/lib-manipulation/3.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/bfb0d6f5367a7fc40bb8ba81323d7dbcc9910fde/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/bfb0d6f5367a7fc40bb8ba81323d7dbcc9910fde/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
