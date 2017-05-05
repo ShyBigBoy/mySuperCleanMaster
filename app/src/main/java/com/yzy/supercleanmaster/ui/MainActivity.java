@@ -5,7 +5,7 @@ import android.app.ActionBar;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
+import android.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.view.KeyEvent;
 import android.view.MenuItem;
@@ -179,7 +179,7 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // 开启一个Fragment事务
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
         // 先隐藏掉所有的Fragment，以防止有多个Fragment显示在界面上的情况
         hideFragments(transaction);
 

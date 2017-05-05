@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
+import android.util.Log;
 
 import com.umeng.socialize.bean.RequestType;
 import com.umeng.socialize.controller.UMServiceFactory;
@@ -41,7 +42,7 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        Log.i("CleanMaster", "SettingsFragment.onCreate");
     }
 
     @Override
@@ -51,6 +52,7 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
         getActivity().getActionBar().setDisplayShowHomeEnabled(false);
         getActivity().getActionBar().setTitle(R.string.title_settings);
+        Log.i("CleanMaster", "SettingsFragment.onActivityCreated");
 
         createShortCut = findPreference("createShortCut");
         createShortCut.setOnPreferenceClickListener(this);

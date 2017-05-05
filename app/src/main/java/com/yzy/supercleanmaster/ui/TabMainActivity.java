@@ -2,7 +2,7 @@ package com.yzy.supercleanmaster.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -14,6 +14,9 @@ import java.util.List;
 
 import com.yzy.supercleanmaster.adapter.FragmentAdapter;
 import com.yzy.supercleanmaster.R;
+import com.yzy.supercleanmaster.fragment.MainFragment;
+import com.yzy.supercleanmaster.fragment.RelaxFragment;
+import com.yzy.supercleanmaster.fragment.SettingsFragment;
 import com.yzy.supercleanmaster.fragment.TabFragment;
 
 public class TabMainActivity extends AppCompatActivity {
@@ -47,14 +50,27 @@ public class TabMainActivity extends AppCompatActivity {
         }
 
         mFragments = new ArrayList<>();
-        for (int i = 0; i < mTitles.size(); i++) {
+        mFragments.add(new MainFragment());
+        mFragments.add(TabFragment.newInstance(1));
+        mFragments.add(new RelaxFragment());
+        mFragments.add(new SettingsFragment());
+        /*for (int i = 0; i < mTitles.size(); i++) {
             mFragments.add(TabFragment.newInstance(i));
-        }
-        adapter = new FragmentAdapter(getSupportFragmentManager(), mFragments, mTitles);
+        }*/
+        adapter = new FragmentAdapter(getFragmentManager(), mFragments, mTitles);
         mViewPager.setAdapter(adapter);//给ViewPager设置适配器
         mTabLayout.setupWithViewPager(mViewPager);//将TabLayout和ViewPager关联起来
 
         mTabLayout.setSelectedTabIndicatorHeight(0);
+
+        mTabLayout.setOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager) {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                //super.onTabSelected(tab);
+                mViewPager.setCurrentItem(tab.getPosition(), false);
+            }
+        });
+
         for (int i = 0; i < mTitles.size(); i++) {
             //获得到对应位置的Tab
             TabLayout.Tab itemTab = mTabLayout.getTabAt(i);

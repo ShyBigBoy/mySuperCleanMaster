@@ -6,8 +6,8 @@ import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -54,7 +54,7 @@ public class AutoStartManageActivity extends BaseSwipeBackActivity {
 
 
         res = getResources();
-        adapter = new MyPagerAdapter(getSupportFragmentManager());
+        adapter = new MyPagerAdapter(getFragmentManager());
 
         pager.setAdapter(adapter);
 

@@ -47,4 +47,5 @@ dependencies {
     compile files('libs/SocialSDK_laiwang_2.jar')
     compile files('libs/SocialSDK_QQZone_1.jar')
     compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:support-v13:26.0.0-alpha1'
 }

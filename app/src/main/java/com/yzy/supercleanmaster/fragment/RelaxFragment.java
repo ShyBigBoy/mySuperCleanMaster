@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,6 +35,7 @@ public class RelaxFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // TODO Auto-generated method stub
+        Log.i("CleanMaster", "RelaxFragment.onCreateView");
 
         View view = inflater.inflate(R.layout.fragment_relax, container, false);
         ButterKnife.inject(this, view);
@@ -48,6 +50,7 @@ public class RelaxFragment extends BaseFragment {
         super.onViewCreated(view, savedInstanceState);
 
         initWebview();
+        Log.i("CleanMaster", "RelaxFragment.onViewCreated");
     }
 
     private void fillData() {
