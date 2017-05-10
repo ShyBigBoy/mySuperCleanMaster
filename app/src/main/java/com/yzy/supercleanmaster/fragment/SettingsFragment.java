@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.umeng.socialize.bean.RequestType;
@@ -49,10 +50,10 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         addPreferencesFromResource(R.xml.ui_settings);
-        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActivity().getActionBar().setDisplayShowHomeEnabled(false);
-        getActivity().getActionBar().setTitle(R.string.title_settings);
-        Log.i("CleanMaster", "SettingsFragment.onActivityCreated");
+        //getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
+        //((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(false);
+        //((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(R.string.title_settings);
 
         createShortCut = findPreference("createShortCut");
         createShortCut.setOnPreferenceClickListener(this);
@@ -71,6 +72,7 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
         pAbout = findPreference("pAbout");
         pAbout.setOnPreferenceClickListener(this);
         initData();
+        Log.i("CleanMaster", "SettingsFragment.onActivityCreated");
     }
 
 

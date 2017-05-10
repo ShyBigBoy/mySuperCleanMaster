@@ -9,6 +9,8 @@
     <string name="drawer_close">drawer_close</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_discovery">发现</string>
+    <string name="title_tools">工具箱</string>
     <string name="app_memory_clean">内存加速</string>
     <string name="app_rublish_clean">垃圾清理</string>
     <string name="app_autostart_manage">自启管理</string>

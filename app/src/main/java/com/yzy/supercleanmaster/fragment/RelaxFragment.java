@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -26,20 +27,22 @@ import butterknife.InjectView;
 
 public class RelaxFragment extends BaseFragment {
 
-    @InjectView(R.id.webView)
+    //@InjectView(R.id.webView)
     WebView mWebView;
-    @InjectView(R.id.progress_bar)
+    //@InjectView(R.id.progress_bar)
     ProgressBar mProgressBar;
     Context mContext;
     @Override
     public View onCreateView(LayoutInflater inflater,
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // TODO Auto-generated method stub
-        Log.i("CleanMaster", "RelaxFragment.onCreateView");
-
         View view = inflater.inflate(R.layout.fragment_relax, container, false);
-        ButterKnife.inject(this, view);
+        //ButterKnife.inject(this, view);
+        mWebView = (WebView) view.findViewById(R.id.webView);
+        mProgressBar = (ProgressBar) view.findViewById(R.id.progress_bar);
         mContext = getActivity();
+
+        Log.i("CleanMaster", "RelaxFragment.onCreateView");
 
         return view;
     }
@@ -61,7 +64,8 @@ public class RelaxFragment extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.reset(this);
+        //ButterKnife.reset(this);
+        Log.i("CleanMaster", "RelaxFragment.onDestroyView");
     }
     private void initWebview() {
         // TODO Auto-generated method stub

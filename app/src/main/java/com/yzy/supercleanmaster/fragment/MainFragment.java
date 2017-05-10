@@ -3,6 +3,7 @@ package com.yzy.supercleanmaster.fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,13 +31,16 @@ import butterknife.OnClick;
 
 
 public class MainFragment extends BaseFragment {
-
-    @InjectView(R.id.arc_store)
+    /**
+     * ViewPager+Fragment,when fragment >= 3,using 'ButterKnife' will cause a null object reference
+     * It is recommended to use 'View.findViewById'
+     */
+    //@InjectView(R.id.arc_store)
     ArcProgress arcStore;
 
-    @InjectView(R.id.arc_process)
+    //@InjectView(R.id.arc_process)
     ArcProgress arcProcess;
-    @InjectView(R.id.capacity)
+    //@InjectView(R.id.capacity)
     TextView capacity;
 
     Context mContext;
@@ -53,8 +57,37 @@ public class MainFragment extends BaseFragment {
         // TODO Auto-generated method stub
 
         View view = inflater.inflate(R.layout.fragment_main, container, false);
-        ButterKnife.inject(this, view);
+        //ButterKnife.inject(this, view);
+        arcStore = (ArcProgress) view.findViewById(R.id.arc_store);
+        arcProcess = (ArcProgress) view.findViewById(R.id.arc_process);
+        capacity = (TextView) view.findViewById(R.id.capacity);
+        view.findViewById(R.id.card1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                speedUp();
+            }
+        });
+        view.findViewById(R.id.card2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rubbishClean();
+            }
+        });
+        view.findViewById(R.id.card3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AutoStartManage();
+            }
+        });
+        view.findViewById(R.id.card4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SoftwareManage();
+            }
+        });
+
         mContext = getActivity();
+
         Log.i("CleanMaster", "MainFragment.onCreateView");
 
         return view;
@@ -97,7 +130,6 @@ public class MainFragment extends BaseFragment {
                 getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-
 
                         if (arcProcess.getProgress() >= (int) x) {
                             timer.cancel();
@@ -150,7 +182,7 @@ public class MainFragment extends BaseFragment {
 
     }
 
-    @OnClick(R.id.card1)
+    //@OnClick(R.id.card1)
     void speedUp() {
         Log.i("CleanMaster", "MainFragment.speedUp111");
         if (!mSingleton) {
@@ -161,7 +193,7 @@ public class MainFragment extends BaseFragment {
     }
 
 
-    @OnClick(R.id.card2)
+    //@OnClick(R.id.card2)
     void rubbishClean() {
         if (!mSingleton) {
             startActivity(RubbishCleanActivity.class);
@@ -170,7 +202,7 @@ public class MainFragment extends BaseFragment {
     }
 
 
-    @OnClick(R.id.card3)
+    //@OnClick(R.id.card3)
     void AutoStartManage() {
         Log.i("CleanMaster", "MainFragment.AutoStartManage111");
         if (!mSingleton) {
@@ -180,7 +212,7 @@ public class MainFragment extends BaseFragment {
         }
     }
 
-    @OnClick(R.id.card4)
+    //@OnClick(R.id.card4)
     void SoftwareManage() {
         if (!mSingleton) {
             startActivity(SoftwareManageActivity.class);
@@ -191,7 +223,7 @@ public class MainFragment extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.reset(this);
+        //ButterKnife.reset(this);
         Log.i("CleanMaster", "MainFragment.onDestroyView");
     }
 
