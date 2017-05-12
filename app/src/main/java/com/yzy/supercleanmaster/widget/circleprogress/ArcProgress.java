@@ -12,6 +12,7 @@ import android.os.Parcelable;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import com.yzy.supercleanmaster.R;
@@ -149,6 +150,7 @@ public class ArcProgress extends View {
 	public void invalidate() {
 		initPainters();
 		super.invalidate();
+		Log.i("CleanMaster", "ArcProgress.invalidate");
 	}
 
 	public float getStrokeWidth() {
@@ -288,10 +290,18 @@ public class ArcProgress extends View {
 		rectF.set(strokeWidth / 2f, strokeWidth / 2f,
 				MeasureSpec.getSize(widthMeasureSpec) - strokeWidth / 2f,
 				MeasureSpec.getSize(heightMeasureSpec) - strokeWidth / 2f);
-		float radius = getWidth() / 2f;
+		//float radius = getWidth() / 2f;
+		/* 在onLayout()过程结束后，我们就可以调用getWidth()方法和getHeight()方法来获取视图的宽高了。
+		   getWidth()方法和getMeasureWidth()的值基本相同。
+		   但getMeasureWidth()方法在measure()过程结束后就可以获取到了，而getWidth()方法要在layout()过程结束后才能获取到。
+		   另外，getMeasureWidth()方法中的值是通过setMeasuredDimension()方法来进行设置的，
+		   而getWidth()方法中的值则是通过视图右边的坐标减去左边的坐标计算出来的。 */
+		float radius = getMeasuredWidth() / 2f;
 		float angle = (360 - arcAngle) / 2f;
 		arcBottomHeight = radius
 				* (float) (1 - Math.cos(angle / 180 * Math.PI));
+		Log.i("CleanMaster", "ArcProgress.onMeasure " + radius + " " + arcAngle
+				+ " " + angle + " " + arcBottomHeight);
 		setMeasuredDimension(widthMeasureSpec, heightMeasureSpec);
 	}
 
@@ -333,6 +343,7 @@ public class ArcProgress extends View {
 					(getWidth() - textPaint.measureText(getBottomText())) / 2.0f,
 					bottomTextBaseline, textPaint);
 		}
+		Log.i("CleanMaster", "ArcProgress.onDraw " + suffixTextPadding);
 	}
 
 	@Override
@@ -353,6 +364,7 @@ public class ArcProgress extends View {
 				getUnfinishedStrokeColor());
 		bundle.putFloat(INSTANCE_ARC_ANGLE, getArcAngle());
 		bundle.putString(INSTANCE_SUFFIX, getSuffixText());
+		Log.i("CleanMaster", "ArcProgress.onSaveInstanceState");
 		return bundle;
 	}
 
@@ -378,5 +390,6 @@ public class ArcProgress extends View {
 			return;
 		}
 		super.onRestoreInstanceState(state);
+		Log.i("CleanMaster", "ArcProgress.onRestoreInstanceState");
 	}
 }
