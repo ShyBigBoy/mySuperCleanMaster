@@ -52,8 +52,9 @@ public class MainFragment extends BaseFragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater,
-                             @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    protected View initViews(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    //public View onCreateView(LayoutInflater inflater,
+    //                         @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // TODO Auto-generated method stub
 
         View view = inflater.inflate(R.layout.fragment_main, container, false);
@@ -93,7 +94,6 @@ public class MainFragment extends BaseFragment {
         return view;
     }
 
-
     @Override
     public void onResume() {
         super.onResume();
@@ -108,6 +108,11 @@ public class MainFragment extends BaseFragment {
         super.onActivityCreated(savedInstanceState);
         UmengUpdateAgent.update(getActivity());
         Log.i("CleanMaster", "MainFragment.onActivityCreated");
+    }
+
+    @Override
+    protected void initData() {
+
     }
 
     private void fillData() {
