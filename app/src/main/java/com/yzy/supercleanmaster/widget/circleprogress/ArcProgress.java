@@ -20,6 +20,7 @@ import com.yzy.supercleanmaster.R;
 
 /**
  * Created by bruce on 11/6/14.
+ * https://github.com/lzyzsd/CircleProgress
  */
 public class ArcProgress extends View {
 	private Paint paint;

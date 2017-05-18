@@ -22,9 +22,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a859b37a-2d2c-4d6e-aa81-c5d9bd042f12" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_1.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/widget/circleprogress/ArcProgress.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/widget/circleprogress/ArcProgress.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/library.iml" afterPath="$PROJECT_DIR$/library/library.iml" />
     </list>
@@ -74,8 +81,8 @@
       <file leaf-file-name="TabMainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/ui/TabMainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="66" column="32" lean-forward="false" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+            <state relative-caret-position="321">
+              <caret line="61" column="36" lean-forward="true" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,12 +90,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RelaxFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/fragment/RelaxFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-327">
+              <caret line="88" column="33" lean-forward="false" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/base/BaseFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ViewPager.java" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-core-ui/26.0.0-alpha1/support-core-ui-26.0.0-alpha1-sources.jar!/android/support/v4/view/ViewPager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-750">
-              <caret line="629" column="25" lean-forward="false" selection-start-line="629" selection-start-column="25" selection-end-line="629" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="1723">
+              <caret line="1208" column="68" lean-forward="false" selection-start-line="1208" selection-start-column="57" selection-end-line="1208" selection-end-column="68" />
+              <folding>
+                <element signature="e#5653#5663#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,8 +125,8 @@
       <file leaf-file-name="FragmentAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/adapter/FragmentAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            <state relative-caret-position="159">
+              <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,8 +137,8 @@
       <file leaf-file-name="FragmentStatePagerAdapter.java" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-v13/26.0.0-alpha1/support-v13-26.0.0-alpha1-sources.jar!/android/support/v13/app/FragmentStatePagerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-563">
-              <caret line="67" column="64" lean-forward="false" selection-start-line="67" selection-start-column="64" selection-end-line="67" selection-end-column="64" />
+            <state relative-caret-position="321">
+              <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -118,20 +147,8 @@
       <file leaf-file-name="MainFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/fragment/MainFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
+            <state relative-caret-position="141">
               <caret line="90" column="58" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArcProgress.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/widget/circleprogress/ArcProgress.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="304" column="66" lean-forward="false" selection-start-line="304" selection-start-column="66" selection-end-line="304" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,37 +158,27 @@
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="2754">
               <caret line="153" column="48" lean-forward="false" selection-start-line="153" selection-start-column="48" selection-end-line="153" selection-end-column="48" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="fragment_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="990">
               <caret line="55" column="51" lean-forward="false" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SplishActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/ui/SplishActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="117" column="51" lean-forward="false" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
-              <folding />
-            </state>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
@@ -186,9 +193,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ic_back</find>
-      <find>selectTab</find>
-      <find>OnTabSelectedListener</find>
       <find>onTabSelected</find>
       <find>MainActi</find>
       <find>mTitle</find>
@@ -199,8 +203,6 @@
       <find>applyKitKatTranslucency</find>
       <find>Context</find>
       <find>mSingleton</find>
-      <find>setOffscreenPageLimit</find>
-      <find>mOffscreenPageLimit</find>
       <find>mFragments</find>
       <find>getItem</find>
       <find>strokeWidth</find>
@@ -216,6 +218,11 @@
       <find>arcStore</find>
       <find>onMeasure(int wid</find>
       <find>get</find>
+      <find>setOffscreenPageLimit</find>
+      <find>populate()</find>
+      <find>mOffscreenPageLimit</find>
+      <find>destroyItem</find>
+      <find>onCreateView</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
@@ -2894,6 +2901,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mySuperCleanMaster" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -3176,21 +3198,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mySuperCleanMaster" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Production">
           <PATH>
@@ -3242,7 +3249,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="recentsLimit" value="5" />
-    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.last.selected" value="library" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app/build/outputs/apk" />
     <property name="ExportApk.Flavors" value="" />
@@ -3719,7 +3726,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1602" height="905" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24903475" sideWeight="0.5053333" order="2" side_tool="true" content_ui="tabs" />
@@ -3737,11 +3743,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28850034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.49764627" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Device Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.94533336" sideWeight="0.4864865" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.94533336" sideWeight="0.4864865" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5050437" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25160876" sideWeight="0.49466667" order="0" side_tool="false" content_ui="combo" />
@@ -3757,6 +3762,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28850034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3794,20 +3800,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-fragment/25.3.1/support-fragment-25.3.1-sources.jar!/android/support/v4/app/FragmentStatePagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/sources/android-25/android/preference/PreferenceFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1692">
-          <caret line="108" column="40" lean-forward="false" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-compat/26.0.0-alpha1/support-compat-26.0.0-alpha1-sources.jar!/android/support/v4/app/SupportActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -3840,7 +3832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="34" column="51" lean-forward="true" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3855,9 +3846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2376">
           <caret line="146" column="39" lean-forward="false" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3886,26 +3874,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
           <caret line="46" column="45" lean-forward="false" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="38" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/sources/android-25/android/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="795" column="26" lean-forward="false" selection-start-line="795" selection-start-column="26" selection-end-line="795" selection-end-column="26" />
-        </state>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/app/libs/umeng-update-v2.5.0.jar!/com/umeng/update/UmengUpdateAgent.class">
@@ -3972,21 +3952,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_main_card.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-108">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="96" column="9" lean-forward="true" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4004,18 +3982,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/base/BaseFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4023,7 +3993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="2771" column="25" lean-forward="false" selection-start-line="2771" selection-start-column="25" selection-end-line="2771" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4035,14 +4004,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_relax.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/sources/android-25/android/app/Activity.java">
@@ -4063,16 +4031,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2052">
           <caret line="145" column="40" lean-forward="false" selection-start-line="145" selection-start-column="17" selection-end-line="145" selection-end-column="40" />
-          <folding>
-            <element signature="e#2568#2569#0" expanded="false" />
-            <element signature="e#2612#2613#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/ui/SplishActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
+        <state relative-caret-position="1854">
           <caret line="117" column="51" lean-forward="false" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
           <folding />
         </state>
@@ -4082,86 +4046,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_tab.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/fragment/RelaxFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/design/23.1.1/design-23.1.1-sources.jar!/android/support/design/widget/TabLayout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="608" column="16" lean-forward="false" selection-start-line="608" selection-start-column="16" selection-end-line="608" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-core-ui/26.0.0-alpha1/support-core-ui-26.0.0-alpha1-sources.jar!/android/support/v4/view/ViewPager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="629" column="25" lean-forward="false" selection-start-line="629" selection-start-column="25" selection-end-line="629" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/ui/TabMainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="66" column="32" lean-forward="false" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/adapter/FragmentAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-v13/26.0.0-alpha1/support-v13-26.0.0-alpha1-sources.jar!/android/support/v13/app/FragmentStatePagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-563">
-          <caret line="67" column="64" lean-forward="false" selection-start-line="67" selection-start-column="64" selection-end-line="67" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="990">
           <caret line="55" column="51" lean-forward="false" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/sources/android-25/java/lang/Math.java">
@@ -4172,9 +4086,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/sources/android-25/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11779" column="21" lean-forward="false" selection-start-line="11779" selection-start-column="21" selection-end-line="11779" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="153" column="48" lean-forward="false" selection-start-line="153" selection-start-column="48" selection-end-line="153" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/widget/circleprogress/ArcProgress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-core-ui/26.0.0-alpha1/support-core-ui-26.0.0-alpha1-sources.jar!/android/support/v4/view/ViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1723">
+          <caret line="1208" column="68" lean-forward="false" selection-start-line="1208" selection-start-column="57" selection-end-line="1208" selection-end-column="68" />
+          <folding>
+            <element signature="e#5653#5663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-v13/26.0.0-alpha1/support-v13-26.0.0-alpha1-sources.jar!/android/support/v13/app/FragmentStatePagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/adapter/FragmentAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/ui/TabMainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="61" column="36" lean-forward="true" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/sources/android-25/android/webkit/WebViewClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/sources/android-25/android/webkit/WebChromeClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2916">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/sources/android-25/android/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="1542" column="28" lean-forward="false" selection-start-line="1542" selection-start-column="16" selection-end-line="1542" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/base/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/fragment/MainFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
+        <state relative-caret-position="141">
           <caret line="90" column="58" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -4182,35 +4191,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../../../myTools/adt-bundle-linux-x86_64-20140702/sdk/sources/android-25/android/view/View.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/fragment/RelaxFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="11779" column="21" lean-forward="false" selection-start-line="11779" selection-start-column="21" selection-end-line="11779" selection-end-column="21" />
-          <folding>
-            <element signature="e#468945#468946#0" expanded="true" />
-            <element signature="e#468982#468983#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="153" column="48" lean-forward="false" selection-start-line="153" selection-start-column="48" selection-end-line="153" selection-end-column="48" />
+        <state relative-caret-position="-327">
+          <caret line="88" column="33" lean-forward="false" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/yzy/supercleanmaster/widget/circleprogress/ArcProgress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="304" column="66" lean-forward="false" selection-start-line="304" selection-start-column="66" selection-end-line="304" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
