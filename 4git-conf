@@ -52,3 +52,5 @@ git config --global core.autocrlf  input
 如果你是window程序员，且正在开发仅运行在win上的项目，可以设置false取消此功能，把回车符记录在库中。
 
 git config --global core.autocrlf  false
+
+
